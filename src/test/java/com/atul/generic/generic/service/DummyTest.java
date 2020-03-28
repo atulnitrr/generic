@@ -15,21 +15,31 @@ class DummyTest {
     }
 
     @Test
-    void dummy() {
-        dummy.dummy(new Person("atul", "kumar"));
+    void test_3() {
+        dummy.show(34);
     }
 
-
+    @Test
+    void test_5() {
+        dummy.show(89.908);
+    }
 
     @Test
     void dummy_2() {
         dummy.dummy("app subah 7 baje utha dena");
     }
 
+    @Test
+    void test_9() {
+        final Integer[] array = {1, 2, 3, 4, 5};
+        dummy.showArray(array);
 
+    }
 
+    @Test
+    void test_10() {
+        final String[] array = {"aa", "bb", "cc"};
+        dummy.showArray(array);
 
-
-
-
+    }
 }
