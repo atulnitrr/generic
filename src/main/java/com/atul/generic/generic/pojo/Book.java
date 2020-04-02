@@ -15,8 +15,12 @@ import java.util.Comparator;
 @ToString
 public class Book implements Comparable<Book> {
     private String title;
-    private String authorName;
-    private int numOfBooks;
+    public String authorName;
+    public int numOfBooks;
+
+    private String dummy() {
+        return "dummy";
+    }
 
     @Override
     public int compareTo(Book o) {
