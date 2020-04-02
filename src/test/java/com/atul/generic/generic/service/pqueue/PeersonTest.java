@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
@@ -38,6 +41,14 @@ class PeersonTest {
 
     @Test
     void test_map() {
+        final Map<String, String> map = new LinkedHashMap<>();
+        map.put("a", "12");
+        map.put("bb", "12");
+
+        map.forEach((k, v) ->
+                System.out.println(k + " --> " + v));
 
     }
+
+
 }
